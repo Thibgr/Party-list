@@ -1,0 +1,66 @@
+nav{
+    background: white;
+    background-size: 4.9%;
+    background-position: top;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    border-bottom: 1px solid black;
+
+    font-family: "Orator Std";
+    display: none;
+
+    z-index: 1000;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+nav li::after{
+    width: 80%; height: 15px;
+    content: " ";
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    z-index: -1;
+}
+
+
+
+nav li:nth-child(2)::after{
+    background-color: #f8ea6a;
+}
+
+nav li:nth-child(1)::after{
+    background-color: #6dc1e9;
+}
+
+
+nav li a{
+    color: #000;
+    margin: 0 20px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+nav li:hover::after{
+    display: block;
+}
+
+nav li{
+    position: relative;
+}
+
+
+
+

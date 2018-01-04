@@ -1,0 +1,20 @@
+// VENDOR IMPORT
+// @import "vendor/reset"; imported via cdn, need to import bootstrap from sass and not cdn
+
+// UTILITIES IMPORT
+@import "utilities/variables";
+@import "utilities/base";
+
+// COMPONENTS IMPORT
+
+
+// LAYOUT IMPORT
+@import "partials/layout/nav";
+@import "partials/layout/footer";
+
+
+// PAGES IMPORT
+@import "partials/pages/home";
+@import "partials/pages/listproduct";
+@import "partials/pages/product";
+

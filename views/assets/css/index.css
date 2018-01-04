@@ -1,0 +1,196 @@
+/* HEADER */
+
+body #header{
+    background-image: url("../images/main/bg-grid.svg") !important ;
+    background-repeat: repeat;
+    background-size: 5.1%;
+    display: flex;
+    flex-direction: column; justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-attachment: fixed;
+
+}
+
+body #header{
+    display: flex;
+    flex-direction: column;
+    align-items: center; justify-content: center;
+    height: 100vh; width: 100vw;
+    transition: transform 0.6s ease-in-out;
+    -webkit-transition: -webkit-transform 0.6s ease-in-out;
+}
+
+#header .header_logo-img {
+    width: 40%;
+   /*  transform: translateZ(-0.5px) scale(0.9); */
+}
+
+@keyframes bounce{
+    from {bottom: 86px;}
+    50%  {bottom: 106px;}
+    to   {bottom: 86px;}
+}
+
+@-moz-keyframes bounce{
+    from {bottom: 86px;}
+    50%  {bottom: 106px;}
+    to   {bottom: 86px;}
+}
+
+@-webkit-keyframes bounce{
+    from {bottom: 86px;}
+    50%  {bottom: 106px;}
+    to   {bottom: 86px;}
+}
+
+#header a{
+    text-decoration: none;
+    cursor: pointer;
+    position: absolute;
+    bottom:10px;
+    animation: bounce 0.7s ease infinite;
+
+    z-index: 1;
+}
+
+#header .header_arrow-img{
+    width: 20%;
+}
+
+
+/* confettis */
+
+@keyframes confetti-slow {
+    0% {
+        transform: translate3d(0, 0, 0) rotateX(0) rotateY(0);
+    }
+    100% {
+        transform: translate3d(25px, 105vh, 0) rotateX(360deg) rotateY(180deg);
+    }
+}
+@keyframes confetti-medium {
+    0% {
+        transform: translate3d(0, 0, 0) rotateX(0) rotateY(0);
+    }
+    100% {
+        transform: translate3d(100px, 105vh, 0) rotateX(100deg) rotateY(360deg);
+    }
+}
+@keyframes confetti-fast {
+    0% {
+        transform: translate3d(0, 0, 0) rotateX(0) rotateY(0);
+    }
+    100% {
+        transform: translate3d(-50px, 105vh, 0) rotateX(10deg) rotateY(250deg);
+    }
+}
+
+.confetti-container {
+    perspective: 700px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.confetti {
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    border-radius: 0%;
+}
+.confetti--animation-slow {
+    animation: confetti-slow 2.25s linear 1 forwards;
+}
+.confetti--animation-medium {
+    animation: confetti-medium 1.75s linear 1 forwards;
+}
+.confetti--animation-fast {
+    animation: confetti-fast 1.25s linear 1 forwards;
+}
+
+/* FIN HEADER */
+
+
+/* CONCEPT */
+
+#concept{
+    width: 100vw;
+    transition: transform 0.6s ease-in-out;
+    -webkit-transition: -webkit-transform 0.6s ease-in-out;
+
+    background-color: #f8ea6a;
+
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+}
+
+.video-wrapper {
+    position: relative;
+}
+
+.video-wrapper > video {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.video-wrapper > video.has-media-controls-hidden::-webkit-media-controls {
+    display: none;
+}
+
+.video-overlay-play-button {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 10px calc(50% - 50px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    opacity: 0.95;
+    cursor: pointer;
+}
+
+.video-overlay-play-button:hover {
+
+}
+
+.video-overlay-play-button.is-hidden {
+    display: none;
+}
+
+
+
+/* FIN CONCEPT */
+
+
+/* PARTICIPER */
+
+#participer{
+    background-color: #e494b8;
+
+}
+
+#participer img{
+    width: 100%;
+}
+
+.container-picto{
+    height: 120px;
+    width: 120px;
+}
+
+#participer img[src="../../assets/images/participate/download.svg"]{
+    width: 80%;
+}
+
+#participer h2{
+    font-size: 1.2rem;
+    background-color: white;
+    font-family: "Orator Std";
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.19);
+}
