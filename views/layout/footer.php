@@ -2,17 +2,23 @@
         <div class="container py-5">
 
             <div class="row">
-                <div class="col-md-3 col-12 pb-5 pb-md-0">
+                <div class="col-md-3 col-12 pb-5 pb-md-0 flex-column">
                     <h4>Party list</h4>
-                    <a href="#">Le concept</a>
-                    <a href="#">Comment participer ?</a>
-                    <a href="#">Télécharger l'application</a>
-                    <a href="#">Recevoir la newsletter</a>
+                    <ul>
+                        <li><a href="#concept">Le concept</a></li>
+                        <li><a href="#participate">Comment participer ?</a></li>
+                        <!--   li><a href="#">Télécharger l'application</a></li   -->
+                        <li><a href="#newsletter">Recevoir la newsletter</a></li>
+                    </ul>
+
                 </div>
                 <div class="col-md-3 col-12 pb-5 pb-md-0">
                     <h4>Contact</h4>
-                    <a href="#">Nous contacter</a>
-                    <a href="#">Mentions légales</a>
+                    <ul>
+                        <li><a href="#">Nous contacter</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                    </ul>
+
                 </div>
             </div>
         </div>

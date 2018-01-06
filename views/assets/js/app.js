@@ -29,13 +29,13 @@ $('a[href*="#"]')
         ) {
             // Figure out element to scroll to
             var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            target = target.length-86 ? target : $('[name=' + this.hash.slice(1) + ']');
             // Does a scroll target exist?
             if (target.length) {
                 // Only prevent default if animation is actually gonna happen
                 event.preventDefault();
                 $('html, body').animate({
-                    scrollTop: target.offset().top
+                    scrollTop: target.offset().top-86
                 }, 1000, function() {
                     // Callback after animation
                     // Must change focus!
@@ -59,7 +59,7 @@ var Confettiful = function Confettiful(el) {
     this.containerEl = null;
 
     this.confettiFrequency = 3;
-    this.confettiColors = ['#f8ea6a', '#6dc1e9', '#e595ba'];
+    this.confettiColors = ['#52c3ed', '#f18fbc', '#f9eb4d'];
     this.confettiAnimations = ['slow', 'medium', 'fast'];
 
     this._setupElements();
@@ -126,8 +126,8 @@ var videoPlayButton,
         formatVideoPlayButton: function() {
             videoWrapper.insertAdjacentHTML('beforeend', '\
                 <svg class="video-overlay-play-button" viewBox="0 0 200 200" alt="Play video">\
-                    <circle cx="100" cy="100" r="90" fill="none" stroke-width="15" stroke="#fff"/>\
-                    <polygon points="70, 55 70, 145 145, 100" fill="#fff"/>\
+                    <circle cx="100" cy="100" r="90" fill="none" stroke-width="15" stroke="#000"/>\
+                    <polygon points="142.9,93.5 86.2,164.8 64.5,54.5 "/>\
                 </svg>\
             ')
         },

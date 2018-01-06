@@ -5,6 +5,7 @@
             <ul class="col-md-4">
                 <li><a href="#concept">Concept</a></li>
                 <li><a href="#participer">Participer</a></li>
+                <li><a href="#newsletter">Newsletter</a></li>
             </ul>
             <div class="col-md-4 mr-auto">
                 <a href="#"><img src="../../assets/images/logopl.svg" alt="" width="200px"></a>

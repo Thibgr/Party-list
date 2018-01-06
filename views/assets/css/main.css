@@ -7,75 +7,81 @@
 
 *{
     font-size: 12px;
+    font-family: Arial;
+}
+
+
+/* NAV */
+
+nav{
+    background: white;
+    background-size: 4.9%;
+    background-position: top;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    border-bottom: 1px solid black;
+
+    font-family: "Orator Std";
+    display: none;
+
+    z-index: 1000;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+nav li::after{
+    width: 80%; height: 15px;
+    content: " ";
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    z-index: -1;
 }
 
 
 
-/*!* PARALLAX *!*/
 
-/*.wrapper {*/
-    /*!* The height needs to be set to a fixed value for the effect to work.*/
-     /** 100vh is the full height of the viewport. *!*/
-    /*height: 100vh;*/
-    /*!* The scaling of the images would add a horizontal scrollbar, so disable x overflow. *!*/
-    /*overflow-x: hidden;*/
-    /*!* Enable scrolling on the page. *!*/
-    /*overflow-y: hidden;*/
-    /*!* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*!*/
-    /*perspective: 2px;*/
-/*}*/
 
-/*.section {*/
-    /*!* Needed for children to be absolutely positioned relative to the parent. *!*/
-    /*position: relative;*/
-    /*!* The height of the container. Must be set, but it doesn't really matter what the value is. *!*/
-    /*height: auto;*/
+nav li:nth-child(1)::after{
+    background-color: #52c3ed;
+}
 
-    /*!* For text formatting. *!*/
-    /*display: flex;*/
-    /*align-items: center;*/
-    /*justify-content: center;*/
-    /*color: white;*/
-    /*text-shadow: 0 0 5px #000;*/
-/*}*/
+nav li:nth-child(2)::after{
+    background-color: #f9eb4d;
+}
 
-/*.parallax::after {*/
-    /*!* Display and position the pseudo-element *!*/
-    /*content: " ";*/
-    /*position: absolute;*/
-    /*top: 0;*/
-    /*right: 0;*/
-    /*bottom: 0;*/
-    /*left: 0;*/
+nav li:nth-child(3)::after{
+    background-color: #f18fbc;
+}
 
-    /*!* Move the pseudo-element back away from the camera,*/
-     /** then scale it back up to fill the viewport.*/
-     /** Because the pseudo-element is further away, it appears to move more slowly, like in real life. *!*/
-    /*transform: translateZ(-1px) scale(1.5);*/
-    /*!* Force the background image to fill the whole element. *!*/
-    /*background-size: 100%;*/
-    /*!* Keep the image from overlapping sibling elements. *!*/
-    /*z-index: -1;*/
-/*}*/
+nav li a{
+    color: #000;
+    margin: 0 20px;
+    text-decoration: none;
+}
 
-/*!* The styling for the static div. *!*/
-/*.static {*/
-    /*background: red;*/
-/*}*/
+nav li a:hover {
+    color: #000;
+    text-decoration: none;
+}
 
-/*.bg1::after {*/
-    /*background-image: url("../images/main/bg-grid.svg") !important ;*/
-    /*background-repeat: repeat;*/
-    /*background-size: 5.1%;*/
+nav li:hover::after{
+    display: block;
+}
 
-    /*width: auto; height: 100%;*/
-/*}*/
+nav li{
+    position: relative;
+}
 
-/*.logo-parallax{*/
 
-/*}*/
-
-/*!* FIN PARALLAX *!*/
 
 
 /* FOOTER */
@@ -84,8 +90,15 @@ footer{
     background-color: rgba(0, 0, 0, 0.87);
 }
 
+footer h4{
+    color: #FFF;
+    font-size: 1rem;
+}
 
+footer a{
+    color: #afafaf;
+    font-size: 0.8rem;
+}
 
-
-/* Autre parallax */
-
+footer a:hover{
+}
